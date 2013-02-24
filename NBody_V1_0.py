@@ -9,6 +9,8 @@ Created on Wed Feb 20 20:48:29 2013
 
 import sys
 
+sys.path += ['.']
+
 from OpenGL.GLUT import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
@@ -17,6 +19,12 @@ from Newton_V1_0 import *
 from Ship_V1_0 import *
 from numpy import *
 from random import *
+
+from ctypes import util
+try:
+    from OpenGL.platform import win32
+except AttributeError:
+    pass
 
 camera = [10.0, 0.0, 0.0]
 target = [0.0, 0.0, 0.0]
