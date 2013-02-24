@@ -8,7 +8,7 @@ Created on Sat Feb 23 18:15:13 2013
 from OpenGL.GLUT import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
-from Newton import *
+from Newton_V1_0 import *
 from numpy import *
 
 class Ship:

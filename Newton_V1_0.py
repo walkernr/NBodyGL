@@ -5,7 +5,7 @@ Created on Wed Feb 20 02:22:01 2013
 @author: Nick Walker
 """
 
-from AstroObject import *
+from AstroObject_V1_0 import *
 from numpy import *
 
 def getVector(vector_a, vector_b):

@@ -12,9 +12,9 @@ import sys
 from OpenGL.GLUT import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
-from AstroObject import *
-from Newton import *
-from Ship import *
+from AstroObject_V1_0 import *
+from Newton_V1_0 import *
+from Ship_V1_0 import *
 from numpy import *
 from random import *
 
