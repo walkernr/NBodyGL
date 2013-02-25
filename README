@@ -36,7 +36,7 @@ Usage:
 Features:
 ---------
 
-	*	Gravitation between multiple astrological objects
+	*	Gravitation between multiple Astronomical objects
 	
 	*	Adding and subtracting objects from the system
 	
@@ -55,7 +55,7 @@ Future Features:
 	
 	*	Larger systems
 	
-	*	Generation of high speed, high mass external astrological objects
+	*	Generation of high speed, high mass external Astronomical objects
 	
 	*	N number of stars
 	
@@ -88,9 +88,9 @@ Controls:
 	
 	*	l: rotate camera right
 	
-	*	]: add astrological object
+	*	]: add Astronomical object
 	
-	*	[: remove astrological object
+	*	[: remove Astronomical object
 	
 	*	mouse: changes camera facing
 	
