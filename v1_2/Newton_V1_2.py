@@ -7,6 +7,7 @@ Created on Wed Feb 20 02:22:01 2013
 
 from AstroObject_V1_2 import *
 from numpy import dot, array, pi, sin, cos, sqrt
+from random import uniform
 
 def getVector(vector_a, vector_b):
     return array(vector_b) - array(vector_a)
@@ -97,11 +98,11 @@ def updateCollisions(AstroObjects):
         modified_diffuse = (collision[0].getMass() * collision[0].getDiffuseLight() + collision[1].getMass() * collision[1].getDiffuseLight()) / modified_mass
         modified_specular = (collision[0].getMass() * collision[0].getSpecularLight() + collision[1].getMass() * collision[1].getSpecularLight()) / modified_mass
         modified_shininess = (collision[0].getMass() * collision[0].getShininess() + collision[1].getMass() * collision[1].getShininess()) / modified_mass
-        frac = [uniform(0, 1)]
+#        frac = [uniform(0, 1)]
 #        for n in range(rand(0,10)):
 #            frac.append(uniform (0, 1.0-sum(numbers)))
         modified_object = AstroObject(mass = modified_mass, density = modified_density, position = modified_position, velocity = modified_velocity, angular_position = modified_angular_position, angular_velocity = modified_angular_velocity, ambient = modified_ambient, diffuse = modified_diffuse, specular = modified_specular, shininess = modified_shininess)
-        #AstroObjects.append(modified_object)
+        AstroObjects.append(modified_object)
     for object_a in AstroObjects:
         if object_a.getExistence() != False:
             objects.append(object_a)
