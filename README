@@ -9,13 +9,14 @@
 Nick Walker
 -----------
 
-23 February 2013
+27 February 2013
 ----------------
 
-V 1.1
+V 1.3
 -----
 
-This program creates a solar system and uses Newton's Law of gravitation to animate motion. It allows the user to manipulate and explore the system at will.
+This program creates a solar system and uses Newton's Law of gravitation to 
+animate motion. It allows the user to manipulate and explore the system at will.
 
 Requires:
 ---------
@@ -29,9 +30,16 @@ Requires:
 Usage:
 ------
 
-	*	Run the NBodyV_1_1.py file
+	*	Run the NBodyV_1_3.py file
 	
-	*	The rar archive contains an executable in the \dist folder for running the program on a Windows PC without Python
+	*	The extra folders allow for people without Python to run the program
+		on a Windows machine by running the executable in the \dist folder
+	
+	*	Collisions with debris are still very unstable, but they are relatively
+		easy to disable. You can disable collisions by commenting out the line 
+		with updateCollisions(); also, if you just want to remove debris, comment 
+		out the if block in the updateCollsions() function and the else: line in 
+		the NewtonV_1_3.py file, then tab over everything that was in the else block
 	
 Features:
 ---------
@@ -46,12 +54,14 @@ Features:
 	
 	*	Scene traversal with mouse input
 	
+	*	Collisions with debris
+	
 Future Features:
 ----------------
 		
 	*	More variation in mass and density
 	
-	*	Better collisions (debris)
+	*	Better collisions (fix bugs with debris and conservation of energy)
 	
 	*	Larger systems
 	
@@ -62,8 +72,6 @@ Future Features:
 	*	Lighting control
 	
 	*	Bugfixes for movement
-	
-	*	Smoother motion
 	
 Controls:
 ---------
