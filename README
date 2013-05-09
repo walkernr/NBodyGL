@@ -9,10 +9,10 @@
 Nick Walker
 -----------
 
-1 March 2013
+9 April 2013
 ----------------
 
-V 1.4
+V 1.5
 -----
 
 This program creates a solar system and uses Newton's Law of gravitation to 
@@ -27,19 +27,34 @@ Requires:
 	*	numpy - a math library
 		-	http://www.numpy.org/
 		
+	*	PIL - python imaging library
+		-   http://www.pythonware.com/products/pil/
+		
 Usage:
 ------
 
-	*	Run the NBodyV_1_3.py file
+	*	Run the NBodyV_1_5.py file
 	
-	*	The extra folders allow for people without Python to run the program
-		on a Windows machine by running the executable in the \dist folder
-	
-	*	Collisions with debris are still very unstable, but they are relatively
-		easy to disable. You can disable collisions by commenting out the line 
-		with updateCollisions(); also, if you just want to remove debris, comment 
-		out the if block in the updateCollsions() function and the else: line in 
-		the NewtonV_1_3.py file, then tab over everything that was in the else block
+	*	Collisions are still not working correctly. If you have problems, I would suggest turning them off through
+		the command line
+		
+	*	Command Line Flags:
+			
+			-	The first flag is the number of planets
+			
+			-	The second flag is the number of rings (these determine th boundaries
+				and the spawn radius for planets)
+				
+			-	'-c' means no collisions
+			
+			-	'-d' means no deletions at boundaries
+			
+			-	'-e' means more eccentric orbits
+			
+			-   '-b' means binary star system
+			
+			-   '-t' means spheres are replaced with teapots
+			
 	
 Features:
 ---------
@@ -47,8 +62,6 @@ Features:
 	*	Gravitation between multiple Astronomical objects
 	
 	*	Adding and subtracting objects from the system
-	
-	*	Camera rotation about the center of the system with keyboard input
 	
 	*	Scene traversal with keyboard input
 	
@@ -63,15 +76,17 @@ Future Features:
 	
 	*	Better collisions (fix disappearing sun and conserve energy)
 	
-	*	Larger systems
-	
 	*	Generation of high speed, high mass external Astronomical objects
 	
 	*	N number of stars
 	
-	*	Lighting control
+	*	Heliocentric lighting
 	
 	*	Bugfixes for movement
+	
+	*	Atmosphere graphical effects
+	
+	*	Shaders for the sun
 	
 Controls:
 ---------
